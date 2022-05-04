@@ -1,5 +1,5 @@
 # Restaurant IOS app
-A restaurant app made with swiftUI for the best experience
+A restaurant app concept made with swiftUI for the best customer experience.
 
 ###  Credit to @Anas for the UI/UX concept and design.
 <a href="https://twitter.com/_gulam_anas" target="blank"><img align="center"
