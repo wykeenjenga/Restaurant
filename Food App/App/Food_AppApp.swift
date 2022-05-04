@@ -12,6 +12,7 @@ struct Food_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Shop())
         }
     }
 }

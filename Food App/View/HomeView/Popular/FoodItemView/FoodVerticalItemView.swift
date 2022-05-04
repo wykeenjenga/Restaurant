@@ -55,6 +55,7 @@ struct FoodVerticalItemView: View {
                     Button(action: {
                         //open detailed view
                         withAnimation(.easeOut){
+                            print("Opening object")
                             shop.selectedFood = food
                             shop.showingFood = true
                         }

@@ -13,49 +13,46 @@ struct PopularFoods: View {
     
     var body: some View {
         
-        VStack {
+        ZStack {
             
-            //MARK: - top section
-            HStack {
-                
-                Text("Popular")
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Spacer()
-                
-                Text("See All")
-                    .foregroundColor(.gray)
-                    .fontWeight(.medium)
-            }// : HStack
-            
-            
-            //MARK: - popular foods section
             VStack {
                 
-                ForEach(AllFoods){ food in
+                //MARK: - top section
+                HStack {
                     
-                    HStack(alignment: .center, spacing: 4, content: {
-                        FoodVerticalItemView(food: food)
-                            .background(whiteColor.clipShape(CustomShape()))
-                            .shadow(radius: 4)
-                            .onTapGesture {
-                                withAnimation(.easeInOut){
-                                    shop.selectedFood = food
-                                    shop.showingFood = true
-                                }
-                            }
-                        
-                        Spacer()
-                        
-                        FoodHorizontalItemView(otherFoodtype: food)
-                        
-                    })// : HStack
+                    Text("Popular")
+                        .font(.title)
+                        .fontWeight(.bold)
                     
-                }.padding(12)
-            } // : popular foods VStack END
-            
+                    Spacer()
+                    
+                    Text("See All")
+                        .foregroundColor(.gray)
+                        .fontWeight(.medium)
+                }// : HStack
+                
+                
+                //MARK: - popular foods section
+                VStack {
+                    
+                    ForEach(AllFoods){ food in
+                        
+                        HStack(alignment: .center, spacing: 4, content: {
+                            FoodVerticalItemView(food: food)
+                                .background(whiteColor.clipShape(CustomShape()))
+                                .shadow(radius: 4)
+                            
+                            Spacer()
+                            
+                            FoodHorizontalItemView(otherFoodtype: food)
+                            
+                        })// : HStack
+                        
+                    }.padding(12)
+                } // : popular foods VStack END
+                
 
+            }
         }// : VStack
         
 
