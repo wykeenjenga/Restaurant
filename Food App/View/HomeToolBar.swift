@@ -17,7 +17,7 @@ struct HomeToolBar: View {
                 
             }, label: {
                 Image(systemName: "rectangle.grid.2x2.fill")
-                    .font(.footnote)
+                    .font(.title2)
             }).foregroundColor(.black)
             
             Spacer()
@@ -26,12 +26,10 @@ struct HomeToolBar: View {
                 
             }, label: {
                 Image(systemName: "magnifyingglass")
-                    .font(.footnote)
+                    .font(.title2)
             }).foregroundColor(.black)
             
         })
-
-        
     }
 }
 
