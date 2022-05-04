@@ -1,0 +1,64 @@
+
+
+[
+  {
+    "id" : 1,
+    "name" : "Beef Burgers",
+    "headline" : "high-protein meal",
+    "image" : "beef-burger",
+    "price" : "9.20",
+    "description" : "A traditional ground beef burger can be a good, high-protein meal—especially if it's grass-finished beef, which we'll tell you more about in a second.",
+    "OtherTypes" : [
+        
+        {
+            "id" : 1,
+            "name" : "Turkey Burgers",
+            "headline":"low in calories",
+            "image" : "beef-burger",
+            "price" : "8.20",
+            "description" : "If you choose a turkey burger made from ground breast meat, it will be ultra-lean, low in calories, and low in artery-clogging fat"
+        },
+        
+        {
+            "id" : 2,
+            "name" : "Veggie Burgers",
+            "headline":"low in calories",
+            "image" : "beef-burger",
+            "price" : "10.00",
+            "description" : "Traditional veggie burgers are typically satisfying and a great way to slash artery-clogging saturated fat when used to replace hamburgers"
+        }
+    ]
+    
+  },
+  
+  {
+    "id" : 2,
+    "name" : "Bread",
+    "headline" : "high-protein meal",
+    "image" : "beef-burger",
+    "price" : "9.20",
+    "description" : "A traditional ground beef burger can be a good, high-protein meal—especially if it's grass-finished beef, which we'll tell you more about in a second.",
+    "OtherTypes" : [
+        
+        {
+            "id" : 1,
+            "name" : "Turkey Burgers",
+            "headline":"low in calories",
+            "image" : "beef-burger",
+            "price" : "8.20",
+            "description" : "If you choose a turkey burger made from ground breast meat, it will be ultra-lean, low in calories, and low in artery-clogging fat"
+        },
+        
+        {
+            "id" : 2,
+            "name" : "Veggie Burgers",
+            "headline":"low in calories",
+            "image" : "beef-burger",
+            "price" : "10.00",
+            "description" : "Traditional veggie burgers are typically satisfying and a great way to slash artery-clogging saturated fat when used to replace hamburgers"
+        }
+    ]
+    
+  }
+  
+]

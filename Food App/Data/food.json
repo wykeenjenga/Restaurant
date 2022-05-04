@@ -1,0 +1,40 @@
+
+[
+  {
+    "id" : 1,
+    "image" : "chicken_fruits",
+    "headline": "Eat Quality food\n from your favourite\n restaurant."
+  },
+  {
+    "id" : 2,
+    "image" : "chicken_fruits2",
+    "headline": "Tired of ordering the same old apps?\n Check out our chef’s latest creation"
+  },
+  {
+    "id" : 3,
+    "image" : "chicken",
+    "headline": "Ready for the weekend?\n Kick it off the right way with 50% off all pizza"
+  },
+  {
+    "id" : 5,
+    "image" : "fruits",
+    "headline": "What better way to celebrate the holidays than with a mint chiclen fiesta?"
+  },
+  
+  {
+    "id" : 6,
+    "image" : "mixed_food",
+    "headline": "Eat Quality food\n from your favourite\n restaurant."
+  },
+  {
+    "id" : 7,
+    "image" : "pizza",
+    "headline": "Ready for the weekend?\n Kick it off the right way with 50% off all pizza"
+  },
+  
+  {
+      "id": 8,
+      "image": "rice",
+      "headline": "Eat Quality food\n from your favourite\n restaurant."
+  }
+]
