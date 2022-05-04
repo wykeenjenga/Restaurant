@@ -11,5 +11,6 @@ class Shop: ObservableObject {
     //allows instances of class to be used everywhere
     @Published var showingFood: Bool = false
     @Published var selectedFood: AllFoodModel? = nil
+    @Published var selectedSubFood: AllOtherTypesModel? = nil
     
 }

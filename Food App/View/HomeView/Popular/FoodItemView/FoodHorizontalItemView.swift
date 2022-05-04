@@ -56,8 +56,8 @@ struct FoodHorizontalItemView: View {
                                 
                                 //open detailed view
                                 withAnimation(.easeOut){
-                                    //shop.selectedFood = food
-                                    //shop.showingFood = true
+                                    shop.selectedFood = food
+                                    shop.showingFood = true
                                 }
                                 
                             }, label: {
