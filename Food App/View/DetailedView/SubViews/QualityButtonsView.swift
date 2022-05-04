@@ -9,6 +9,7 @@ import SwiftUI
 
 struct QualityButtonsView: View {
     
+    //You can think of a logical way... this is just manual way
 
     @State private var bgColor: [Color] = [whiteColor, AccentColor, whiteColor]
     @State private var foregroundColor: [Color] = [.black, whiteColor, .black]
@@ -25,7 +26,7 @@ struct QualityButtonsView: View {
                 
                 foregroundColor[0] = whiteColor
                 foregroundColor[1] = .black
-                foregroundColor[1] = .black
+                foregroundColor[2] = .black
                 
                 
             }, label: {
@@ -50,7 +51,7 @@ struct QualityButtonsView: View {
                 
                 foregroundColor[0] = .black
                 foregroundColor[1] = whiteColor
-                foregroundColor[1] = .black
+                foregroundColor[2] = .black
                 
             }, label: {
                 
@@ -74,7 +75,7 @@ struct QualityButtonsView: View {
                 
                 foregroundColor[0] = .black
                 foregroundColor[1] = .black
-                foregroundColor[1] =  whiteColor
+                foregroundColor[2] =  whiteColor
                 
                 
             }, label: {
