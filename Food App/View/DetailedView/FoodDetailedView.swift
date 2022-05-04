@@ -12,15 +12,14 @@ struct FoodDetailedView: View {
     @EnvironmentObject var shop: Shop
     
     @State private var isAnimating: Bool = false
+
     
     var body: some View {
-        ZStack {
+        VStack {
+            //MARK: - Toolbar
+            DetailedToolBar()
+                .padding()
             VStack(alignment: .center, spacing: 6, content: {
-                
-                //MARK: - Toolbar
-                DetailedToolBar()
-                    .padding()
-                
                 //MARK: - header
                 Header()
                     .padding()
@@ -61,6 +60,7 @@ struct FoodDetailedView: View {
                 
                 
             })
+            Spacer()
         }
         .onAppear{
             withAnimation(.easeInOut(duration: 0.8)){
