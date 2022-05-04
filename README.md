@@ -13,8 +13,8 @@ A restaurant app concept made with swiftUI for the best customer experience.
 <a href='https://ko-fi.com/wycliffn2291' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
       
 ## Video
+https://user-images.githubusercontent.com/46722362/166718835-68f2105b-d43d-4bbb-9fe8-433562056ec9.mov
 
-https://user-images.githubusercontent.com/46722362/162609670-89afe317-08ff-4b77-bfa9-d86eae05f272.mov
 ## Screenshots
 
 <img src="https://user-images.githubusercontent.com/46722362/166712262-a6c87a54-2968-4227-abf9-11f6ceb1ae16.png"
