@@ -9,10 +9,15 @@ import SwiftUI
 
 struct QuantityButtonsView: View {
     
+    @State private var counter: Int = 0
+    
     var body: some View {
         HStack(alignment: .center, spacing: 12, content: {
             
             Button(action: {
+                if counter > 0 {
+                    counter -= 1
+                }
                 
             }, label: {
                 
@@ -24,23 +29,22 @@ struct QuantityButtonsView: View {
                 .foregroundColor(.black)
             })
             
-            Button(action: {
-                
-            }, label: {
-                
-                ZStack {
-                    Text("12")
-                        .font(.body)
-                        .fontWeight(.bold)
-                }
-                .padding(6)
-                .foregroundColor(whiteColor)
-                .background(AccentColor)
-                .cornerRadius(4)
-                .shadow(color: .gray, radius: 2, x: 0, y: 2)
-            })
+            ZStack {
+                Text("\(counter)")
+                    .font(.body)
+                    .fontWeight(.bold)
+            }
+            .padding(6)
+            .foregroundColor(whiteColor)
+            .background(AccentColor)
+            .cornerRadius(4)
+            .frame(width: 40, height: 40, alignment: .center)
+            .shadow(color: .gray, radius: 2, x: 0, y: 2)
             
             Button(action: {
+                if counter < 100{
+                    counter += 1
+                }
                 
             }, label: {
                 

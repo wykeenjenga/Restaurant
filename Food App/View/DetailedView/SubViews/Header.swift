@@ -22,12 +22,7 @@ struct Header: View {
                 .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(grayColor)
-            
-            
-            Image(shop.selectedFood?.image ?? "pizza")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
+        
         }
     }
 }

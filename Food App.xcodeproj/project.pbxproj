@@ -136,14 +136,22 @@
 		CE2893022822A72B0023B3FA /* DetailedView */ = {
 			isa = PBXGroup;
 			children = (
-				CE2893032822A7660023B3FA /* DetailedToolBar.swift */,
 				CE2893052822A8050023B3FA /* FoodDetailedView.swift */,
+				CE28930F2822B7890023B3FA /* SubViews */,
+			);
+			path = DetailedView;
+			sourceTree = "<group>";
+		};
+		CE28930F2822B7890023B3FA /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE2893032822A7660023B3FA /* DetailedToolBar.swift */,
 				CE2893072822AEE70023B3FA /* AddToCart.swift */,
 				CE2893092822B0BA0023B3FA /* Header.swift */,
 				CE28930B2822B1FF0023B3FA /* QualityButtonsView.swift */,
 				CE28930D2822B2430023B3FA /* QuantityButtonsView.swift */,
 			);
-			path = DetailedView;
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		CE385A5F28216DB50070831E = {

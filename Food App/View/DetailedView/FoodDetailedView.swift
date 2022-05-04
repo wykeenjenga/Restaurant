@@ -17,8 +17,19 @@ struct FoodDetailedView: View {
         ZStack {
             VStack(alignment: .center, spacing: 6, content: {
                 
+                //MARK: - Toolbar
+                DetailedToolBar()
+                    .padding()
+                
+                //MARK: - header
                 Header()
                     .padding()
+                
+                Image(shop.selectedFood?.image ?? "pizza")
+                    .resizable()
+                    .scaledToFit()
+                    .offset(y: isAnimating ? 0 : -35)
+                    .frame(width: 200, height: 200)
                 
                 HStack(alignment: .center, spacing: 0, content: {
                     Text("$")
@@ -39,7 +50,6 @@ struct FoodDetailedView: View {
                 //MARK: - Quantity buttons
                 QuantityButtonsView()
                     .padding()
-                    .offset(y: isAnimating ? 0 : -35)
                 
                 
                 //MARK: - Add to cart
@@ -51,6 +61,11 @@ struct FoodDetailedView: View {
                 
                 
             })
+        }
+        .onAppear{
+            withAnimation(.easeInOut(duration: 0.8)){
+                isAnimating.toggle()
+            }
         }
         .background(primaryColor)
     }
