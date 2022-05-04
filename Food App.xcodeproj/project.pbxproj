@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CE2892FD28227E7A0023B3FA /* AllFoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2892FC28227E7A0023B3FA /* AllFoodsModel.swift */; };
 		CE2893012822A5E70023B3FA /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2893002822A5E70023B3FA /* Shop.swift */; };
+		CE2893042822A7660023B3FA /* DetailedToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2893032822A7660023B3FA /* DetailedToolBar.swift */; };
+		CE2893062822A8050023B3FA /* FoodDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2893052822A8050023B3FA /* FoodDetailedView.swift */; };
+		CE2893082822AEE70023B3FA /* AddToCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2893072822AEE70023B3FA /* AddToCart.swift */; };
+		CE28930A2822B0BA0023B3FA /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2893092822B0BA0023B3FA /* Header.swift */; };
+		CE28930C2822B1FF0023B3FA /* QualityButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28930B2822B1FF0023B3FA /* QualityButtonsView.swift */; };
+		CE28930E2822B2430023B3FA /* QuantityButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE28930D2822B2430023B3FA /* QuantityButtonsView.swift */; };
 		CE385A6C28216DB50070831E /* Food_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE385A6B28216DB50070831E /* Food_AppApp.swift */; };
 		CE385A6E28216DB50070831E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE385A6D28216DB50070831E /* ContentView.swift */; };
 		CE385A7028216DB80070831E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE385A6F28216DB80070831E /* Assets.xcassets */; };
@@ -52,6 +58,12 @@
 /* Begin PBXFileReference section */
 		CE2892FC28227E7A0023B3FA /* AllFoodsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFoodsModel.swift; sourceTree = "<group>"; };
 		CE2893002822A5E70023B3FA /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		CE2893032822A7660023B3FA /* DetailedToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedToolBar.swift; sourceTree = "<group>"; };
+		CE2893052822A8050023B3FA /* FoodDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailedView.swift; sourceTree = "<group>"; };
+		CE2893072822AEE70023B3FA /* AddToCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCart.swift; sourceTree = "<group>"; };
+		CE2893092822B0BA0023B3FA /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		CE28930B2822B1FF0023B3FA /* QualityButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityButtonsView.swift; sourceTree = "<group>"; };
+		CE28930D2822B2430023B3FA /* QuantityButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityButtonsView.swift; sourceTree = "<group>"; };
 		CE385A6828216DB50070831E /* Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE385A6B28216DB50070831E /* Food_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_AppApp.swift; sourceTree = "<group>"; };
 		CE385A6D28216DB50070831E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +136,12 @@
 		CE2893022822A72B0023B3FA /* DetailedView */ = {
 			isa = PBXGroup;
 			children = (
+				CE2893032822A7660023B3FA /* DetailedToolBar.swift */,
+				CE2893052822A8050023B3FA /* FoodDetailedView.swift */,
+				CE2893072822AEE70023B3FA /* AddToCart.swift */,
+				CE2893092822B0BA0023B3FA /* Header.swift */,
+				CE28930B2822B1FF0023B3FA /* QualityButtonsView.swift */,
+				CE28930D2822B2430023B3FA /* QuantityButtonsView.swift */,
 			);
 			path = DetailedView;
 			sourceTree = "<group>";
@@ -405,20 +423,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE28930A2822B0BA0023B3FA /* Header.swift in Sources */,
 				CE385A9A28217A580070831E /* HomeToolBar.swift in Sources */,
 				CE385A6E28216DB50070831E /* ContentView.swift in Sources */,
 				CE385AA3282190840070831E /* CustomShape.swift in Sources */,
 				CE385AB22821BE710070831E /* Extension.swift in Sources */,
+				CE2893082822AEE70023B3FA /* AddToCart.swift in Sources */,
 				CE385AA528219E500070831E /* PopularFoods.swift in Sources */,
 				CE385AA828219FD00070831E /* FoodVerticalItemView.swift in Sources */,
 				CE385A6C28216DB50070831E /* Food_AppApp.swift in Sources */,
 				CE385AA128217FCD0070831E /* TopCard.swift in Sources */,
 				CE2892FD28227E7A0023B3FA /* AllFoodsModel.swift in Sources */,
 				CE385A9F28217DED0070831E /* HomeView.swift in Sources */,
+				CE28930C2822B1FF0023B3FA /* QualityButtonsView.swift in Sources */,
 				CE385A9C28217AAC0070831E /* Constants.swift in Sources */,
 				CE385AB42821BEC00070831E /* FoodTypeModel.swift in Sources */,
+				CE2893062822A8050023B3FA /* FoodDetailedView.swift in Sources */,
 				CE385AB72821C1170070831E /* FeaturedFood.swift in Sources */,
+				CE28930E2822B2430023B3FA /* QuantityButtonsView.swift in Sources */,
 				CE385AAA2821A7A20070831E /* FoodHorizontalItemView.swift in Sources */,
+				CE2893042822A7660023B3FA /* DetailedToolBar.swift in Sources */,
 				CE385AAC2821B1D00070831E /* TopFoodCardView.swift in Sources */,
 				CE2893012822A5E70023B3FA /* Shop.swift in Sources */,
 			);

@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PopularFoods: View {
     
+    @EnvironmentObject var shop: Shop
     
     var body: some View {
         
         VStack {
-            
             
             //MARK: - top section
             HStack {
@@ -39,6 +39,12 @@ struct PopularFoods: View {
                         FoodVerticalItemView(food: food)
                             .background(whiteColor.clipShape(CustomShape()))
                             .shadow(radius: 4)
+                            .onTapGesture {
+                                withAnimation(.easeInOut){
+                                    shop.selectedFood = food
+                                    shop.showingFood = true
+                                }
+                            }
                         
                         Spacer()
                         
@@ -61,5 +67,6 @@ struct PopularFoods_Previews: PreviewProvider {
         PopularFoods()
             .previewLayout(.sizeThatFits)
             .padding()
+            .environmentObject(Shop())
     }
 }

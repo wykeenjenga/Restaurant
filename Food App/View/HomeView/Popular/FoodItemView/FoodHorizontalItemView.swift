@@ -10,6 +10,7 @@ import SwiftUI
 struct FoodHorizontalItemView: View {
     
     let otherFoodtype: AllFoodModel
+    @EnvironmentObject var shop : Shop
     
     var body: some View {
         
@@ -53,6 +54,12 @@ struct FoodHorizontalItemView: View {
                             
                             Button(action: {
                                 
+                                //open detailed view
+                                withAnimation(.easeOut){
+                                    //shop.selectedFood = food
+                                    //shop.showingFood = true
+                                }
+                                
                             }, label: {
             
                                 Spacer()
@@ -93,5 +100,6 @@ struct FoodHorizontalItemView_Previews: PreviewProvider {
     static var previews: some View {
         FoodHorizontalItemView(otherFoodtype: AllFoods[0])
             .previewLayout(.sizeThatFits)
+            .environmentObject(Shop())
     }
 }

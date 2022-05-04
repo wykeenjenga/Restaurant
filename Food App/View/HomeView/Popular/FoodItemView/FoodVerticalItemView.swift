@@ -54,6 +54,10 @@ struct FoodVerticalItemView: View {
                     
                     Button(action: {
                         //open detailed view
+                        withAnimation(.easeOut){
+                            shop.selectedFood = food
+                            shop.showingFood = true
+                        }
                         
                     }, label: {
     
