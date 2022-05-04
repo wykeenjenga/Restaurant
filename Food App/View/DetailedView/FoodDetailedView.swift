@@ -25,7 +25,7 @@ struct FoodDetailedView: View {
                 Header()
                     .padding()
                 
-                Image(shop.selectedFood?.image ?? "pizza")
+                Image((shop.selectedFood?.image ?? UserDefaults.standard.string(forKey: "image"))!)
                     .resizable()
                     .scaledToFit()
                     .offset(y: isAnimating ? 0 : -35)
@@ -37,7 +37,7 @@ struct FoodDetailedView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                     
-                    Text(shop.selectedFood?.price ?? "0.00")
+                    Text((shop.selectedFood?.price ?? UserDefaults.standard.string(forKey: "price"))!)
                         .font(.title2)
                         .fontWeight(.bold)
                 })

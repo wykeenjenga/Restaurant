@@ -56,7 +56,14 @@ struct FoodHorizontalItemView: View {
                                 
                                 //open detailed view
                                 withAnimation(.easeOut){
-                                    shop.selectedFood = food
+                                    
+                                    print(food.name)
+                                    
+                                    UserDefaults.standard.set(food.name, forKey: "name")
+                                    UserDefaults.standard.set(food.image, forKey: "image")
+                                    UserDefaults.standard.set(food.price, forKey: "price")
+                                    UserDefaults.standard.set(food.headline, forKey: "headline")
+    
                                     shop.showingFood = true
                                 }
                                 

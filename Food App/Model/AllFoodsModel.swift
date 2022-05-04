@@ -10,7 +10,7 @@ import Foundation
 struct AllFoodModel: Codable, Identifiable{
     
     let id: Int
-    let name: String
+    var name: String
     let image: String
     let headline:  String
     let price: String

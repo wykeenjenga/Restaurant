@@ -13,7 +13,7 @@ struct ContentView: View {
     
     
     var body: some View {
-        if shop.showingFood == false && shop.selectedFood == nil{
+        if shop.showingFood == false && shop.selectedFood == nil {
             HomeView()
         }else{
             FoodDetailedView()

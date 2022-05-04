@@ -14,15 +14,16 @@ struct Header: View {
     
     var body: some View {
         VStack{
-            Text(shop.selectedFood?.name ?? "")
+            
+            Text((shop.selectedFood?.name ?? UserDefaults.standard.string(forKey: "name"))!)
                 .font(.title)
                 .fontWeight(.bold)
             
-            Text(shop.selectedFood?.headline ?? "")
+            Text((shop.selectedFood?.headline ?? UserDefaults.standard.string(forKey: "headline"))!)
                 .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(grayColor)
-        
+            
         }
     }
 }
