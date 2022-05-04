@@ -12,20 +12,20 @@
         
         {
             "id" : 1,
-            "name" : "Turkey Burgers",
+            "name" : "Wild Salmon",
             "headline":"low in calories",
-            "image" : "beef-burger",
-            "price" : "8.20",
-            "description" : "If you choose a turkey burger made from ground breast meat, it will be ultra-lean, low in calories, and low in artery-clogging fat"
+            "image" : "salmon-burger",
+            "price" : "18.20",
+            "description" : "when it comes to proteins, wild salmon is an MVP: It's rich in omega-3's, the healthy fatty acids you find in fish oils that can help lower your risk for heart disease and that fend off metabolism-slowing inflammation"
         },
         
         {
             "id" : 2,
-            "name" : "Veggie Burgers",
-            "headline":"low in calories",
-            "image" : "beef-burger",
+            "name" : "Black Bean",
+            "headline":"nutritional praise",
+            "image" : "black-bean-burger",
             "price" : "10.00",
-            "description" : "Traditional veggie burgers are typically satisfying and a great way to slash artery-clogging saturated fat when used to replace hamburgers"
+            "description" : "Black beans pack 8 grams of protein and 7.5 grams of fiber in a 1/2-cup serving, but they're low in calories and free of saturated fat."
         }
     ]
     
@@ -33,32 +33,63 @@
   
   {
     "id" : 2,
-    "name" : "Bread",
-    "headline" : "high-protein meal",
-    "image" : "beef-burger",
+    "name" : "Cheese Pizza",
+    "headline" : "To up the nutrients",
+    "image" : "cheese-pizza",
     "price" : "9.20",
-    "description" : "A traditional ground beef burger can be a good, high-protein meal—especially if it's grass-finished beef, which we'll tell you more about in a second.",
+    "description" : "To up the nutrients in cheese pizza, choose a whole-grain crust when possible and go “easy” on any high-fat cheese.",
     "OtherTypes" : [
         
         {
             "id" : 1,
-            "name" : "Turkey Burgers",
-            "headline":"low in calories",
-            "image" : "beef-burger",
+            "name" : "Veggie Pizza",
+            "headline" : "More veggies?",
+            "image" : "vegi-pizza",
             "price" : "8.20",
-            "description" : "If you choose a turkey burger made from ground breast meat, it will be ultra-lean, low in calories, and low in artery-clogging fat"
+            "description" : "Health-ifying junk food recipes has to be one of the easiest ways to convince your friends that quitting sugar ain’t all that bad!"
         },
         
         {
             "id" : 2,
-            "name" : "Veggie Burgers",
-            "headline":"low in calories",
-            "image" : "beef-burger",
+            "name" : "Meat Pizza",
+            "headline":"Pizza Base",
+            "image" : "meat-pizza",
             "price" : "10.00",
-            "description" : "Traditional veggie burgers are typically satisfying and a great way to slash artery-clogging saturated fat when used to replace hamburgers"
+            "description" : "Health-ifying junk food recipes has to be one of the easiest ways to convince your friends that quitting sugar ain’t all that bad!"
         }
     ]
     
-  }
+  },
+  
+  {
+    "id" : 3,
+    "name" : "Drumstick",
+    "headline" : "Vitamins and minerals",
+    "image" : "chicken_fruits2",
+    "price" : "51.55",
+    "description" : "all nutrition based on a combination of chicken available at Wegman’s and Wild Fork. Calories & nutrition will vary based on the specific source.",
+    "OtherTypes" : [
+        
+        {
+            "id" : 1,
+            "name" : "Whole Chicken",
+            "headline":"Yummy",
+            "image" : "chicken",
+            "price" : "108.27",
+            "description" : "all nutrition based on a combination of chicken available at Wegman’s and Wild Fork. Calories & nutrition will vary based on the specific source."
+        },
+        
+        {
+            "id" : 2,
+            "name" : "Wing",
+            "headline":"Pizza Base",
+            "image" : "chicken_fruits",
+            "price" : "10.00",
+            "description" : "all nutrition based on a combination of chicken available at Wegman’s and Wild Fork. Calories & nutrition will vary based on the specific source."
+        }
+    ]
+    
+  },
+  
   
 ]

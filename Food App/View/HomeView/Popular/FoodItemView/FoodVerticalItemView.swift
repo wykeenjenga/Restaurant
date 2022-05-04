@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FoodVerticalItemView: View {
     
+    @EnvironmentObject var shop: Shop
+    
     let food: AllFoodModel
     
     var body: some View {
@@ -36,9 +38,8 @@ struct FoodVerticalItemView: View {
                     Spacer()
                 }
                 
-                Spacer()
                 
-                HStack{
+                HStack(spacing: 0){
                     Text("$")
                         .foregroundColor(AccentColor)
                         .font(.headline)
@@ -52,6 +53,7 @@ struct FoodVerticalItemView: View {
                 
                     
                     Button(action: {
+                        //open detailed view
                         
                     }, label: {
     
@@ -81,5 +83,6 @@ struct FoodVerticalItemView_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
             .frame(width: 180)
             .padding()
+            .environmentObject(Shop())
     }
 }

@@ -30,12 +30,12 @@ struct PopularFoods: View {
             }// : HStack
             
             
-            //MARK: - products section
-            
+            //MARK: - popular foods section
             VStack {
+                
                 ForEach(AllFoods){ food in
                     
-                    HStack{
+                    HStack(alignment: .center, spacing: 4, content: {
                         FoodVerticalItemView(food: food)
                             .background(whiteColor.clipShape(CustomShape()))
                             .shadow(radius: 4)
@@ -44,11 +44,10 @@ struct PopularFoods: View {
                         
                         FoodHorizontalItemView(otherFoodtype: food)
                         
-                    }// : HStack
+                    })// : HStack
+                    
                 }.padding(12)
-            }
-            
-            
+            } // : popular foods VStack END
             
 
         }// : VStack

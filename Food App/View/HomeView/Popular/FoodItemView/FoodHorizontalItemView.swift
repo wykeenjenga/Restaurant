@@ -12,18 +12,20 @@ struct FoodHorizontalItemView: View {
     let otherFoodtype: AllFoodModel
     
     var body: some View {
-        VStack {
+        
+        VStack(alignment: .center, content: {
             
             ForEach(otherFoodtype.OtherTypes){ food in
+            
                 
-                VStack {
+                VStack(alignment: .center) {
                     Text(food.name)
                         .fontWeight(.bold)
-                        .font(.subheadline)
+                        .font(.footnote)
                     
                     Text(food.headline)
                         .fontWeight(.light)
-                        .font(.footnote)
+                        .font(.caption)
                     
                     
                     HStack{
@@ -31,19 +33,19 @@ struct FoodHorizontalItemView: View {
                         Image(food.image)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 60, height: 60)
+                            .frame(width: 40, height: 40)
                         
                         
                         VStack{
                             
-                            HStack{
+                            HStack(spacing: 0){
                                 Text("$")
                                     .foregroundColor(AccentColor)
-                                    .font(.subheadline)
+                                    .font(.caption)
                                     .fontWeight(.bold)
                                 
                                 Text(food.price)
-                                    .font(.subheadline)
+                                    .font(.caption)
                                     .fontWeight(.bold)
                             }
                             
@@ -76,15 +78,14 @@ struct FoodHorizontalItemView: View {
                     }
                     
                 }// : VStack
-                .padding()
+                .padding(12)
                 .background(whiteColor.clipShape(CustomShape()))
                 .shadow(radius: 4)
-                
-                Spacer()
+            
                 
             }
             
-        } // : root VStack
+        }) // : root VStack
     }
 }
 

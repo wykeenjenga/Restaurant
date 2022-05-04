@@ -47,7 +47,6 @@ struct HomeView: View {
                         PopularFoods()
                             .padding()
                         
-                        
                         TopFoodCardView()
                             .padding()
                         
@@ -56,8 +55,6 @@ struct HomeView: View {
                 })
             }
             Spacer()
-            
-            
             
         }// : VStack
         .background(primaryColor)
